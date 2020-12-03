@@ -1,0 +1,31 @@
+*Admn Panel:
+          1) Super Admin
+          2) Shop Admin
+
+*Super Admin Panel:
+          1) Website Settings/Info
+          2) Shop Registration Confirmaton
+          3) Chat with shops
+          4) Category Confirmation
+          5) Profile
+          6) Shops Profiles View
+
+*Shop Admin Panel:
+          1) Chat with Super Admin
+          2) Category CRUD with Status 0
+          3) Product CRUD
+          5) Create & edit own Profile
+
+*Tables -> users,shops,categories,products,chats
+         1) Users -> name,email,email vefification with a rand number,
+                     password,status
+         
+         2) Shops -> Shop name,email,email verification with a rand number,
+                     password,status
+         
+         3) Categories -> Category name,category status
+          
+         4) products -> category id,product name,product title,
+                        product price,product description
+        
+         5) Chats -> sender id,receiver id,chat        
