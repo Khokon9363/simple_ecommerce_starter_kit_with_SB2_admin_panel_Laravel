@@ -11,10 +11,17 @@
 |
 */
 
-Route::get('/', 'ShopController@show');
-Route::get('/about', 'ShopController@about');
-Route::get('/contact', 'ShopController@contact');
-Route::get('/login', 'ShopController@show');
-Route::get('/register', 'ShopController@show');
-Route::get('/product', 'ShopController@product');
-Route::get('/single', 'ShopController@single');
+Route::group(['namespace' => 'Shop'], function(){
+    Route::get('/', 'ShopController@show');
+    Route::get('/about', 'ShopController@about');
+    Route::get('/contact', 'ShopController@contact');
+    Route::get('/product', 'ShopController@product');
+    Route::get('/single', 'ShopController@single');
+});
+
+Route::group(['namespace' => 'Admin'], function(){
+
+});
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
